@@ -1,0 +1,38 @@
+1 如何克隆某个仓库?
+git clone 网址
+
+2 如何推送改动到远程仓库？
+git push
+git push -u origin
+
+3 如何查看git的记录?
+git log
+
+4 如何查看当前的git状态？
+git status
+
+5 如何回到git之前的某个节点？
+git reset --hard <commit>
+注意：<commit>为git log 查看的hash code
+
+6 如何查看当前git所在分支？
+git branch
+
+7 如何新建分支？
+git checkout -b test
+
+8 如何从当前分支跳转到另一个分支？
+git checkout style
+
+9 如何添加改动？
+git add hello.html
+
+10 如何添加注释commit？
+git commit -m "Add hello.html"
+注意：git commit -a 表示的是添加所有改动的文件
+
+11 主分支怎样合并style分支？
+1）切换到主分支git checkout master
+2)git merge style
+3)若出现冲突，解决冲突，然后git commit -am "Fix conflict"
+ 
